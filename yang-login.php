@@ -3,9 +3,8 @@
 if(!isset($yang_config)){ //if yang-config.php didn't require
 	require_once(dirname(__FILE__).'/yang-config.php'); // than require~
 
-	echo json_encode(get_session('valid_user'));
 	if(get_session('valid_user')!=null){
-		echo "you've already in";
+		require_once(ROOTPATH.CONTENT.'/home.php');
 		return true;
 	}
 	$user = $_POST['user'];
@@ -18,16 +17,20 @@ if(!isset($yang_config)){ //if yang-config.php didn't require
 	if($login->row==1){
 		set_session('valid_user', $user);
 		echo "you log in!";
+		require_once(ROOTPATH.CONTENT.'/home.php');
 	}
 	else
-		echo "fail!";
+		yang_exit('用户名或者密码错误<br>返回上一页重试', null, '登录失败');
 }
 else{ //if yang-config.php has required than do html
 ?>
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html>
 		<head>
+			<meta name="renderer" content="webkit">
 			<title>登陆</title>
+			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+			<link type="text/css" rel="stylesheet" href="<?php load_css(); ?>" />
 		</head>
 		<body>
 			<form id="login" action="yang-login.php" method="post">

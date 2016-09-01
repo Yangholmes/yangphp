@@ -38,12 +38,13 @@ if(!isset($yang_config)){
 define('ROOTPATH', dirname( __FILE__ ));
 //includes path
 define('INCLUDES', '/yang-includes');
+//content path
+define('CONTENT', '/yang-content');
 
 require(ROOTPATH.INCLUDES.'/functions.php');
 require(ROOTPATH.INCLUDES.'/log.php');
-require(ROOTPATH.INCLUDES.'/yang-mysql-class.php');
+require(ROOTPATH.INCLUDES.'/yang-class-mysql.php');
 require(ROOTPATH.INCLUDES.'/yang-xml.php');
 require(ROOTPATH.INCLUDES.'/yang-session.php');
-
-//entry of the app
-require(ROOTPATH.'/yang-entry.php');
+require(ROOTPATH.INCLUDES.'/yang-error.php');
+require(ROOTPATH.INCLUDES.'/yang-css-loader.php');

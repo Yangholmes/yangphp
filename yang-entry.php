@@ -6,7 +6,7 @@
  */
 
 if(get_session('valid_user')!=null){ //the visitor has already login 
-	
+	require_once(ROOTPATH.CONTENT.'/home.php');
 }
 else{
 	require(ROOTPATH.'/yang-login.php'); //the visitor haven't login

@@ -9,6 +9,8 @@
 if ( file_exists(dirname(__FILE__).'/yang-config.php') ){
 	//load configuration
 	require(dirname(__FILE__).'/yang-config.php');
+	//entry of the app
+	require(dirname(__FILE__).'/yang-entry.php');
 }
 else{
 	//

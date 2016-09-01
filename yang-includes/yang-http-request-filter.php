@@ -9,10 +9,12 @@
  * $_GET -- $HTTP_GET_VARS [deprecated] — HTTP GET variables
  */
 function get_POST_request(){
-	//no necessary to build a POST and GET request function 
+	// filter for the request
+	
 	return $_POST;
 }
 function get_GET_request(){
-	//no necessary to build a POST and GET request function 
+	// filter for the request
+	
 	return $_GET;
 }

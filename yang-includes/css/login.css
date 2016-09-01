@@ -1,0 +1,10 @@
+@CHARSET "UTF-8"
+
+html,body{
+	width: 100%;
+}
+
+input{
+	display: block;
+	margin: .5em 0;
+}
