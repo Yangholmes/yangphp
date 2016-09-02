@@ -30,7 +30,7 @@ else{ //if yang-config.php has required than do html
 			<meta name="renderer" content="webkit">
 			<title>登陆</title>
 			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-			<link type="text/css" rel="stylesheet" href="<?php load_css(); ?>" />
+			<?php load_css('login.css'); load_js('jquery-2.1.1.js'); ?>
 		</head>
 		<body>
 			<form id="login" action="yang-login.php" method="post">
@@ -38,6 +38,7 @@ else{ //if yang-config.php has required than do html
 			<input type="password" name="password" >
 			<input type="submit" value="submit">
 		</form>
+		<a href="yang-signup.php">注册请出门左拐~</a>
 		</body>
 	</html>
 <?php

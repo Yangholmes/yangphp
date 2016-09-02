@@ -48,3 +48,4 @@ require(ROOTPATH.INCLUDES.'/yang-xml.php');
 require(ROOTPATH.INCLUDES.'/yang-session.php');
 require(ROOTPATH.INCLUDES.'/yang-error.php');
 require(ROOTPATH.INCLUDES.'/yang-css-loader.php');
+require(ROOTPATH.INCLUDES.'/yang-js-loader.php');

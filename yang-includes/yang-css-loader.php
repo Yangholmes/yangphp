@@ -7,25 +7,29 @@
 /**
  * 
  */
-function load_css($stylesheet){
+function load_css($stylesheet, $echo=true){
 	if(!suffix_detect($stylesheet, '.css')) //if $stylesheet does not contain suffix...
 		$stylesheet .= ".css"; //then add one
-	$css_folder = dirname($__FILE__)."/css"; //css folder
-	$css_file = $css_folder.$stylesheet; // stylesheet file
 
+	$css_folder = get_root()."/yang-includes/css"; //css folder
+	$css_file = $css_folder."/".$stylesheet; // stylesheet file
+
+	$style = make_css_element($css_file);
+	if($echo){
+		echo $style;
+		return true;
+	}
+	else{
+		return $style;
+	}
 }
-
 
 /**
  * 
  */
-function suffix_detect($file, $suffix){
-	$dot_pattern = '/^\./';
-	if(!preg_match($dot_pattern, $suffix)){ //if $suffix does not contain a beginning dot
-		$suffix = ".".$suffix; //then add a dot
-	}
-	$pattern = '/'.$suffix.'$/';
-	return preg_match($pattern, $file); //test the filename, return match result
+function make_css_element($css_file){
+	$tag = '<link type="text/css" rel="stylesheet" href="'.$css_file.'" >';
+	return $tag;
 }
 
 /**
