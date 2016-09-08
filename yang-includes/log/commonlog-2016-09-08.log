@@ -1,0 +1,9 @@
+2016-09-08 18:17:00 
+	##errno 2
+	##error set_error_handler() expects the argument (yang_error_handler) to be a valid callback
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-error.php
+	##in line 11
+2016-09-08 18:17:00 shutdown successfully
+2016-09-08 18:17:14 shutdown successfully
+2016-09-08 18:17:36 shutdown successfully
+2016-09-08 18:17:54 shutdown successfully

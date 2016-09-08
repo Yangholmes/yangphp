@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @param $logging: logging content
+ * @param $filename: loging file name
+ * output: generate a logging file in the diectory log/$filename-Y-m-d.log
+ */
 function logFileIO($logging='', $filename='commonlog'){
 	$folder = dirname(__FILE__)."/log/";
 	$logFileName = $filename.'-';
