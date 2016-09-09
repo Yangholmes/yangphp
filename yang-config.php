@@ -34,12 +34,14 @@ if(!isset($yang_config)){
 	$yang_config = true;
 }
 
-//root path
+// root path
 define('ROOTPATH', dirname( __FILE__ ));
-//includes path
+// includes path
 define('INCLUDES', '/yang-includes');
-//content path
+// content path
 define('CONTENT', '/yang-content');
+// server path
+define('SERVER', '/yang-server');
 
 require(ROOTPATH.INCLUDES.'/functions.php');
 require(ROOTPATH.INCLUDES.'/log.php');
