@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * 
+ */
+
 class dispatcher{
 
 	private $action; // action
@@ -41,7 +45,7 @@ class dispatcher{
 	 */
 	private function do_action(){
 		$this->action_isset(); // check the action file
-		include_once "";
+		include_once $this->file; // execute action
 	}
 
 	/**
