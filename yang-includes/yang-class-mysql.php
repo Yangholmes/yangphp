@@ -9,6 +9,7 @@ class yangMysql{
 	private $db_usr;
 	private $db_password;
 	private $db_database;
+	private $db_port;
 	private $db_table;
 
 	private $charset; //
@@ -35,6 +36,7 @@ class yangMysql{
 		$this->db_usr = DB_USER;
 		$this->db_password = DB_PASSWORD;
 		$this->db_database = DB_DATABASE; //default database
+		$this->db_port = DB_PORT;
 		$this->db_table = DB_TABLE; //default table
 		$this->connect(); //connect to mysql
 	}
@@ -49,7 +51,7 @@ class yangMysql{
 	 * connect to MySQL
 	 */
 	public function connect(){
-		@ $this->connection = new mysqli($this->db_host, $this->db_usr, $this->db_password,$this->db_database);
+		@ $this->connection = new mysqli($this->db_host, $this->db_usr, $this->db_password, $this->db_database, $this->db_port);
 		if($this->connection->connect_error){
 			$this->errorHandle();
 			$this->connection = null; //if error occur, set connection null

@@ -32,22 +32,23 @@ if(!isset($yang_config)){
 	define('DB_COLLATE', '');
 
 	$yang_config = true;
+
+	// root path
+	define('ROOTPATH', dirname( __FILE__ ));
+	// includes path
+	define('INCLUDES', '/yang-includes');
+	// content path
+	define('CONTENT', '/yang-content');
+	// server path
+	define('SERVER', '/yang-server');
+
+	require_once(ROOTPATH.INCLUDES.'/functions.php');
+	require_once(ROOTPATH.INCLUDES.'/log.php');
+	require_once(ROOTPATH.INCLUDES.'/yang-class-mysql.php');
+	require_once(ROOTPATH.INCLUDES.'/yang-xml.php');
+	require_once(ROOTPATH.INCLUDES.'/yang-session.php');
+	require_once(ROOTPATH.INCLUDES.'/yang-error.php');
+	require_once(ROOTPATH.INCLUDES.'/yang-css-loader.php');
+	require_once(ROOTPATH.INCLUDES.'/yang-js-loader.php');
+
 }
-
-// root path
-define('ROOTPATH', dirname( __FILE__ ));
-// includes path
-define('INCLUDES', '/yang-includes');
-// content path
-define('CONTENT', '/yang-content');
-// server path
-define('SERVER', '/yang-server');
-
-require(ROOTPATH.INCLUDES.'/functions.php');
-require(ROOTPATH.INCLUDES.'/log.php');
-require(ROOTPATH.INCLUDES.'/yang-class-mysql.php');
-require(ROOTPATH.INCLUDES.'/yang-xml.php');
-require(ROOTPATH.INCLUDES.'/yang-session.php');
-require(ROOTPATH.INCLUDES.'/yang-error.php');
-require(ROOTPATH.INCLUDES.'/yang-css-loader.php');
-require(ROOTPATH.INCLUDES.'/yang-js-loader.php');
