@@ -10,19 +10,38 @@
  */
 function get_POST_request(){
 	// filter for the request
-	$post_string = json_encode($_POST);
-	$post_array = json_decode($post_string);
-	return $post_array;
+
+	return $_POST;
 }
 function get_GET_request(){
 	// filter for the request
-	$get_string = json_encode($_GET);
-	$get_array = json_decode($get_string);
-	return $get_array;
+
+	return $_GET;
+}
+
+/**
+ * 
+ */
+function get_ALL_request(){
+	$request = get_POST_request() ? get_POST_request() : get_GET_request();
+	$request = request_head_check($request);
+	return $request;
+}
+
+/**
+ * 
+ */
+function request_head_check($request){
+	if( !$request['action'] )
+		$request['action'] = 'default.php';
+	if( !$request['data'] )
+		$request['data'] = null;
+	return $request;
 }
 
 /**
  * test
  */
-echo json_encode( get_POST_request() );
-echo json_encode( get_GET_request() );
+// echo json_encode( get_POST_request() );
+// echo json_encode( get_GET_request() );
+// echo json_encode( get_ALL_request() );
