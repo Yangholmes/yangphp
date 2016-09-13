@@ -12,8 +12,11 @@ class dispatcher{
 
 	/**
 	 * constructor
+	 * @param $action: string, action name
+	 * @param $method: string, POST, GET or FILE
+	 * @param $filter: function or script string, file filter
 	 */
-	public function __construct($action, $method){
+	public function __construct($action, $method, $filter){
 		$this->action = $action;
 	}
 
@@ -21,13 +24,13 @@ class dispatcher{
 	 * destructor
 	 */
 	public function __destruct(){
-
+		$this->action = null;
 	}
 
 	/**
-	 * 
+	 * does the action exist?
 	 */
-	public function action_isset(){
+	private function action_isset(){
 		$this->set_folder(); // set action folder
 		$file = $this->folder."/$this->action";
 		if( is_file($file) && file_exists($file) ){ // chenck file, whether it exists~
@@ -43,15 +46,15 @@ class dispatcher{
 	/**
 	 * do the action
 	 */
-	private function do_action(){
+	public function do_action(){
 		$this->action_isset(); // check the action file
 		include_once $this->file; // execute action
 	}
 
 	/**
-	 * do the action
+	 * set or change the action
 	 */
-	private function set_action($action){
+	public function set_action($action){
 		$this->action = $action;
 	}
 

@@ -10,11 +10,19 @@
  */
 function get_POST_request(){
 	// filter for the request
-	
-	return $_POST;
+	$post_string = json_encode($_POST);
+	$post_array = json_decode($post_string);
+	return $post_array;
 }
 function get_GET_request(){
 	// filter for the request
-	
-	return $_GET;
+	$get_string = json_encode($_GET);
+	$get_array = json_decode($get_string);
+	return $get_array;
 }
+
+/**
+ * test
+ */
+echo json_encode( get_POST_request() );
+echo json_encode( get_GET_request() );
