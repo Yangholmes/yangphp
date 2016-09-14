@@ -1,0 +1,325 @@
+2016-09-14 10:26:24 shutdown successfully
+2016-09-14 10:26:29 shutdown successfully
+2016-09-14 10:26:32 shutdown successfully
+2016-09-14 10:26:35 shutdown successfully
+2016-09-14 10:26:38 shutdown successfully
+2016-09-14 10:26:41 shutdown successfully
+2016-09-14 10:27:15 
+	##errno 8
+	##error Undefined index: user
+	##errfile C:\xampp\htdocs\yangphp\yang-signup.php
+	##in line 6
+2016-09-14 10:27:15 shutdown successfully
+2016-09-14 10:27:34 shutdown successfully
+2016-09-14 10:27:37 
+	##errno 8
+	##error Undefined index: user
+	##errfile C:\xampp\htdocs\yangphp\yang-signup.php
+	##in line 6
+2016-09-14 10:27:37 shutdown successfully
+2016-09-14 10:27:47 shutdown successfully
+2016-09-14 10:28:17 
+	##errno 8
+	##error Undefined index: user
+	##errfile C:\xampp\htdocs\yangphp\yang-signup.php
+	##in line 6
+2016-09-14 10:28:17 shutdown successfully
+2016-09-14 10:28:35 shutdown successfully
+2016-09-14 10:28:37 shutdown successfully
+2016-09-14 10:28:39 shutdown successfully
+2016-09-14 11:05:32 shutdown successfully
+2016-09-14 13:48:56 shutdown successfully
+2016-09-14 13:57:26 
+	##errno 8
+	##error Use of undefined constant YangPHP - assumed 'YangPHP'
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php
+	##in line 7
+2016-09-14 13:57:26 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 13:57:26 shutdown successfully
+2016-09-14 14:00:18 
+	##errno 8
+	##error Use of undefined constant YangPHP - assumed 'YangPHP'
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php
+	##in line 7
+2016-09-14 14:00:18 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:00:18 shutdown successfully
+2016-09-14 14:01:02 
+	##errno 8
+	##error Use of undefined constant YangPHP - assumed 'YangPHP'
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php
+	##in line 7
+2016-09-14 14:01:02 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:01:02 shutdown successfully
+2016-09-14 14:01:10 
+	##errno 8
+	##error Use of undefined constant YangPHP - assumed 'YangPHP'
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php
+	##in line 7
+2016-09-14 14:01:10 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:01:10 shutdown successfully
+2016-09-14 14:01:30 
+	##errno 8
+	##error Use of undefined constant YangPHP - assumed 'YangPHP'
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php
+	##in line 7
+2016-09-14 14:01:30 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:01:30 shutdown successfully
+2016-09-14 14:06:02 
+	##errno 8
+	##error Use of undefined constant YangPHP - assumed 'YangPHP'
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php
+	##in line 7
+2016-09-14 14:06:02 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:06:02 shutdown successfully
+2016-09-14 14:06:15 
+	##errno 8
+	##error Use of undefined constant YangPHP - assumed 'YangPHP'
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php
+	##in line 7
+2016-09-14 14:06:15 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:06:15 shutdown successfully
+2016-09-14 14:06:23 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:06:23 shutdown successfully
+2016-09-14 14:06:50 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:06:50 shutdown successfully
+2016-09-14 14:17:21 
+	##errno 2
+	##error Missing argument 4 for do_html_head(), called in C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php on line 30 and defined
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php
+	##in line 7
+2016-09-14 14:17:21 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:17:21 
+	##errno 2
+	##error preg_match() expects parameter 2 to be string, array given
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 59
+2016-09-14 14:17:21 
+	##errno 8
+	##error Array to string conversion
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-css-loader.php
+	##in line 12
+2016-09-14 14:17:21 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:17:21 
+	##errno 8
+	##error Undefined variable: script
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-html-generator.php
+	##in line 19
+2016-09-14 14:17:21 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:17:21 shutdown successfully
+2016-09-14 14:17:47 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:17:47 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:17:47 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:17:47 shutdown successfully
+2016-09-14 14:18:34 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:18:34 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:18:34 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:18:34 shutdown successfully
+2016-09-14 14:19:53 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:19:53 
+	##errno 8
+	##error Undefined variable: style
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-css-loader.php
+	##in line 11
+2016-09-14 14:19:53 shutdown successfully
+2016-09-14 14:20:29 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:20:29 
+	##errno 8
+	##error Undefined variable: style
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-css-loader.php
+	##in line 11
+2016-09-14 14:20:29 shutdown successfully
+2016-09-14 14:20:41 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:20:41 
+	##errno 8
+	##error Undefined variable: style
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-css-loader.php
+	##in line 11
+2016-09-14 14:20:41 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:20:41 shutdown successfully
+2016-09-14 14:21:26 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:21:26 
+	##errno 8
+	##error Undefined variable: style
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\yang-css-loader.php
+	##in line 11
+2016-09-14 14:21:26 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:21:26 shutdown successfully
+2016-09-14 14:21:43 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:21:43 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:21:43 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:21:43 shutdown successfully
+2016-09-14 14:56:58 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-14 14:56:58 shutdown successfully
+2016-09-14 14:59:06 
+	##errno 2
+	##error require_once(C:\xampp\php\pear): failed to open stream: Permission denied
+	##errfile C:\xampp\htdocs\yangphp\yang-config.php
+	##in line 57
+2016-09-14 15:01:51 
+	##errno 2
+	##error require_once(C:\xampp\php\pear): failed to open stream: Permission denied
+	##errfile C:\xampp\htdocs\yangphp\yang-config.php
+	##in line 57
+2016-09-14 15:01:58 
+	##errno 2
+	##error require_once(C:\xampp\php\pear): failed to open stream: Permission denied
+	##errfile C:\xampp\htdocs\yangphp\yang-config.php
+	##in line 57
+2016-09-14 15:04:04 shutdown successfully
+2016-09-14 15:05:23 shutdown successfully
+2016-09-14 15:05:58 shutdown successfully
+2016-09-14 15:06:07 shutdown successfully
+2016-09-14 15:06:19 shutdown successfully
+2016-09-14 15:06:23 shutdown successfully
+2016-09-14 15:07:42 shutdown successfully
+2016-09-14 15:07:58 shutdown successfully
+2016-09-14 15:07:59 shutdown successfully
+2016-09-14 15:08:19 shutdown successfully
+2016-09-14 15:09:13 shutdown successfully
+2016-09-14 15:10:05 shutdown successfully
+2016-09-14 15:10:06 shutdown successfully
+2016-09-14 15:10:52 shutdown successfully
+2016-09-14 15:11:12 shutdown successfully
+2016-09-14 15:12:02 shutdown successfully
+2016-09-14 15:12:06 shutdown successfully
+2016-09-14 15:12:19 shutdown successfully
+2016-09-14 15:12:30 shutdown successfully
+2016-09-14 15:29:05 shutdown successfully
+2016-09-14 15:29:11 shutdown successfully
+2016-09-14 15:29:40 shutdown successfully
+2016-09-14 15:29:52 shutdown successfully
+2016-09-14 15:29:58 shutdown successfully
+2016-09-14 15:30:00 shutdown successfully
+2016-09-14 15:30:05 
+	##errno 8
+	##error Undefined index: user
+	##errfile C:\xampp\htdocs\yangphp\yang-signup.php
+	##in line 6
+2016-09-14 15:30:05 shutdown successfully
+2016-09-14 15:30:06 shutdown successfully
+2016-09-14 15:30:51 
+	##errno 8
+	##error Undefined index: user
+	##errfile C:\xampp\htdocs\yangphp\yang-signup.php
+	##in line 6
+2016-09-14 15:30:51 shutdown successfully
+2016-09-14 15:30:52 shutdown successfully
+2016-09-14 15:30:54 
+	##errno 8
+	##error Undefined index: user
+	##errfile C:\xampp\htdocs\yangphp\yang-signup.php
+	##in line 6
+2016-09-14 15:30:54 shutdown successfully
+2016-09-14 16:52:00 shutdown successfully

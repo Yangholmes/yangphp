@@ -26,16 +26,11 @@ else{ //if yang-config.php has required than do html
 ?>
 <!DOCTYPE html>
 	<html>
-		<head>
-			<meta name="renderer" content="webkit">
-			<title>登陆</title>
-			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-			<?php load_css('login.css'); load_js('jquery-2.1.1.js'); ?>
-		</head>
+		<?php do_html_head("登陆", null, "login.css", "jquery-2.1.1.js", ['yangphp', 'login']); ?>
 		<body>
 			<form id="login" action="yang-login.php" method="post">
-			<input type="text" name="user" >
-			<input type="password" name="password" >
+			账户: <input type="text" name="user" >
+			密码: <input type="password" name="password" >
 			<input type="submit" value="submit">
 		</form>
 		<a href="yang-signup.php">注册请出门左拐~</a>

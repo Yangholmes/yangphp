@@ -7,15 +7,7 @@ if( @ $_POST['user'] == null ){
 ?>
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="renderer" content="webkit">
-		<title>注册</title>
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-		<?php 
-			load_css('signup.css'); 
-			load_js('jquery-2.1.1.js'); 
-			?>
-	</head>
+	<?php do_html_head("注册", null, "signup.css", "jquery-2.1.1.js", ['yangphp', 'login']); ?>
 	<body>
 		<form id="login" action="yang-signup.php" method="post">
 			<input type="text" name="user" >
@@ -44,9 +36,8 @@ else{
 	$only = $signup->simpleSelect(null,"username='$user'", null, null);
 	if($signup->row == 0){
 		$result = $signup->insert($new_user);
-		echo $result;
 		if($result!=0)
-			yang_exit('注册成功！请<a href="yang-login.php">登录</a>', null, '注册成功');
+			yang_exit('注册成功！请<a href="index.php">登录</a>', null, '注册成功');
 		else
 			yang_exit('注册信息不合法！<br>返回上一页<a href="yang-signup.php">重试</a>', null, '注册失败');
 	}

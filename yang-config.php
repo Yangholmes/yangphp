@@ -6,6 +6,9 @@
 
 if(!isset($yang_config)){
 
+	/** Project Name **/
+	define('PROJECT_NAME', 'YangPHP');
+
 	// ** MySQL settings - You can get this info from your web host ** //
 	/** MySQL hostname */
 	define('DB_HOST', 'localhost');
@@ -48,7 +51,7 @@ if(!isset($yang_config)){
 	require_once(ROOTPATH.INCLUDES.'/yang-xml.php');
 	require_once(ROOTPATH.INCLUDES.'/yang-session.php');
 	require_once(ROOTPATH.INCLUDES.'/yang-error.php');
+	require_once(ROOTPATH.INCLUDES.'/yang-html-generator.php');
 	require_once(ROOTPATH.INCLUDES.'/yang-css-loader.php');
 	require_once(ROOTPATH.INCLUDES.'/yang-js-loader.php');
-
 }

@@ -8,6 +8,8 @@
  * 
  */
 function load_css($stylesheet, $echo=true){
+	if($stylesheet == null || $stylesheet == "")
+		return null;
 	if(!suffix_detect($stylesheet, '.css')) //if $stylesheet does not contain suffix...
 		$stylesheet .= ".css"; //then add one
 

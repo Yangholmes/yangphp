@@ -8,6 +8,8 @@
  * 
  */
 function load_js($javascript, $echo=true){
+	if($javascript == null || $javascript == "")
+		return null;
 	if(!suffix_detect($javascript, '.js')) //if $javascript does not contain suffix...
 		$javascript .= ".js"; //then add one
 
