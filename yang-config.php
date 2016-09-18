@@ -54,4 +54,5 @@ if(!isset($yang_config)){
 	require_once(ROOTPATH.INCLUDES.'/yang-html-generator.php');
 	require_once(ROOTPATH.INCLUDES.'/yang-css-loader.php');
 	require_once(ROOTPATH.INCLUDES.'/yang-js-loader.php');
+	require_once(ROOTPATH.INCLUDES.'/yang-filter.php');
 }
