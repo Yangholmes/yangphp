@@ -1,3 +1,3 @@
 # yangphp
-Author: Yangholmes
-yangphp is a lite CM project.
+- Author: Yangholmes
+- yangphp is a lite CM project.

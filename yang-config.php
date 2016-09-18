@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 
+ *
  */
 
 if(!isset($yang_config)){
@@ -12,30 +12,22 @@ if(!isset($yang_config)){
 	// ** MySQL settings - You can get this info from your web host ** //
 	/** MySQL hostname */
 	define('DB_HOST', 'localhost');
-
 	/** MySQL database username */
 	define('DB_USER', 'root');
-
 	/** MySQL port */
 	define('DB_PORT', '3306');
-
 	/** MySQL database password */
 	define('DB_PASSWORD', '1001');
-
 	/** Database Charset to use in creating database tables. */
 	define('DB_CHARSET', 'utf8');
-
 	/** The name of the database  */
 	define('DB_DATABASE', 'yang-test');
-
 	/** The name of the table  */
 	define('DB_TABLE', 'test_user');
-
 	/** The Database Collate type. Don't change this if in doubt. */
 	define('DB_COLLATE', '');
 
-	$yang_config = true;
-
+	/* define global constant */
 	// root path
 	define('ROOTPATH', dirname( __FILE__ ));
 	// includes path
@@ -45,6 +37,8 @@ if(!isset($yang_config)){
 	// server path
 	define('SERVER', '/yang-server');
 
+	/* require classes and functions */
+	//change them into auto require function
 	require_once(ROOTPATH.INCLUDES.'/functions.php');
 	require_once(ROOTPATH.INCLUDES.'/log.php');
 	require_once(ROOTPATH.INCLUDES.'/yang-class-mysql.php');
@@ -55,4 +49,7 @@ if(!isset($yang_config)){
 	require_once(ROOTPATH.INCLUDES.'/yang-css-loader.php');
 	require_once(ROOTPATH.INCLUDES.'/yang-js-loader.php');
 	require_once(ROOTPATH.INCLUDES.'/yang-filter.php');
+	//change them into auto require function, here it is
+
+	$yang_config = true;
 }
