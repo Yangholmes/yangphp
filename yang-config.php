@@ -37,19 +37,26 @@ if(!isset($yang_config)){
 	// server path
 	define('SERVER', '/yang-server');
 
-	/* require classes and functions */
-	//change them into auto require function
-	require_once(ROOTPATH.INCLUDES.'/functions.php');
-	require_once(ROOTPATH.INCLUDES.'/log.php');
-	require_once(ROOTPATH.INCLUDES.'/yang-class-mysql.php');
-	require_once(ROOTPATH.INCLUDES.'/yang-xml.php');
-	require_once(ROOTPATH.INCLUDES.'/yang-session.php');
-	require_once(ROOTPATH.INCLUDES.'/yang-error.php');
-	require_once(ROOTPATH.INCLUDES.'/yang-html-generator.php');
-	require_once(ROOTPATH.INCLUDES.'/yang-css-loader.php');
-	require_once(ROOTPATH.INCLUDES.'/yang-js-loader.php');
-	require_once(ROOTPATH.INCLUDES.'/yang-filter.php');
-	//change them into auto require function, here it is
+	/* require required classes and functions */
+	// require_once(ROOTPATH.INCLUDES.'/functions.php');
+	// require_once(ROOTPATH.INCLUDES.'/log.php');
+	// require_once(ROOTPATH.INCLUDES.'/yang-error.php');
+
+	/* require all plugin classes and functions in includes folder */
+	require_functions(ROOTPATH.INCLUDES);
 
 	$yang_config = true;
+}
+
+/**
+ * @param $parent: parent directory
+ */
+function require_functions($parent){
+	$all_files = scandir($parent);
+	$pattern = '/\.php$/';
+	for($i=0;$i<count($all_files);$i++){
+		if( preg_match($pattern, $all_files[$i]) )
+			require_once($parent."/$all_files[$i]");
+	}
+	return true;
 }

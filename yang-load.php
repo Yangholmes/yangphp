@@ -14,6 +14,22 @@ if ( file_exists(dirname(__FILE__).'/yang-config.php') ){
 }
 else{
 	//
-	require(dirname(__FILE__).INCLUDES.'/functions.php');
-	yang_exit('核心组件丢失');
+	require(dirname(__FILE__).'/yang-includes'.'/functions.php');
+?>
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="renderer" content="webkit">
+			<title>出错啦！</title>
+			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+			
+		</head>
+		<body>
+		<p>核心部件丢失了！</p>
+		<p>T.T</p>
+		</body>
+	</html>
+
+<?php
 }

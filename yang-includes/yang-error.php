@@ -11,7 +11,7 @@ error_reporting(0);
 set_error_handler("yang_error_handler");
 
 //set a fatal error handler
-register_shutdown_function("yang_shutdown");
+register_shutdown_function('yang_shutdown');
 
 /**
  * function yang_error_handle
@@ -26,13 +26,13 @@ function yang_error_handler($errno, $errstr, $errfile, $errline){
 	error_clear_last(); // clear last error
 }
 
-/** 
- * 
+/**
+ *
  */
 function yang_shutdown(){
-	$error = error_get_last(); // 
+	$error = error_get_last(); //
 	if($error != null ){ // if error is not null
 		yang_error_handle($error['type'], $error['message'], $error['file'], $error['line']);
+		logFileIO("shutdown successfully");
 	}
-	logFileIO("shutdown successfully");
 }

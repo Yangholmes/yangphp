@@ -11,4 +11,3 @@ if(get_session('valid_user')!=null){ //the visitor has already login
 else{
 	require(ROOTPATH.'/yang-login.php'); //the visitor haven't login
 }
-
