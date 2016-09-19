@@ -49,6 +49,8 @@ if(!isset($yang_config)){
 }
 
 /**
+ * auto require all scripts in yang-includes folder
+ * potential safety problem: could send malicious scripts into this folder could be executed 
  * @param $parent: parent directory
  */
 function require_functions($parent){
