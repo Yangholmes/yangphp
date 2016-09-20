@@ -4,16 +4,8 @@
  * CAUTION! this feature probably unconfigure in PHP Linux
  */
 
-// $ch = curl_init("http://localhost:8983/solr/gettingstarted/select?indent=on&q=*:*&wt=json");
-// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-// $response = curl_exec($ch);
-// curl_close($ch);
-
-// $obj = json_decode( $response );
-// echo $response;
-
-$request = new yang_HTTP_request("http://localhost:8983/solr/gettingstarted/select?indent=on&q=*:*&wt=json");
+// $request = new yang_HTTP_request("http://localhost:8983/solr/gettingstarted/select?indent=on&q=*:*&wt=json");
+$request = new yang_HTTP_request("http://gdrtc.org");
 $response = $request->request();
 echo $response;
 
@@ -31,7 +23,7 @@ class yang_HTTP_request{
 		//HTTP header
 		"Accept"=>"*/*",
 		"Accept-Charset"=>"utf-8",
-		"Accept-Encoding"=>"gzip, deflate, sdch",
+		// "Accept-Encoding"=>"gzip, deflate, sdch",
 		//HTTP entity header
 		"Content-Type"=>"*/*",
 		"Content-Encoding"=>"utf-8",
@@ -111,19 +103,20 @@ class yang_HTTP_request{
 		if( !is_array($this->header) )
 			return false;
 		$header=[]; $i=0;
-		echo json_encode($this->header);
-		// while( list($key,$value) = $this->header ){
-		// 	if( is_string($value) ){
-		// 		$header[i]=$key.":".$value;
-		// 		$i++;
-		// 	}
-		// }
+		while( list($key,$value) = each($this->header) ){
+			if( is_string($value) ){
+				$header[$i]="$key:$value";
+				$i++;
+			}
+		}
 		curl_setopt($this->chandle, CURLOPT_HTTPHEADER, $header);
+		// curl_setopt($this->chandle, CURLOPT_HEADER, true);
+		// curl_setopt($this->chandle, CURLINFO_HEADER_OUT, true);
 		return $header;
 	}
 	public function request(){
 		$this->apply_header();
-		$this->response = curl_exec();
+		$this->response = curl_exec($this->chandle);
 		return $this->response;
 	}
 }
