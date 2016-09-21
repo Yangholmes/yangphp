@@ -2,14 +2,10 @@
 /**
  * base on cURL
  * CAUTION! this feature probably unconfigure in PHP Linux
+ * upload file function is in the rough
+ * without cookies
  */
 
-// $request = new yang_HTTP_request("http://localhost:8983/solr/gettingstarted/select?indent=on&q=*:*&wt=json");
-$request = new yang_HTTP_request("http://gdrtc.org");
-$response = $request->request();
-echo $response;
-
-///////////////////////////////////////////////////////////////
 class yang_HTTP_request{
 	// http request url
 	private $url;
@@ -30,7 +26,7 @@ class yang_HTTP_request{
 	);
 
 	// data being to send
-	private $data;
+	private $data = null;
 	// return from curl_exec()
 	private $response;
 
@@ -70,20 +66,26 @@ class yang_HTTP_request{
 	 }
 
 	/**
-	 * @param $header: an array, [header: value]
+	 * @param $header: must be an array, [header: value]
 	 */
 	public function set_header($header){
-		is_array($header);
+		if( !is_array($header) )
+			return false;
+		$this->header = $header;
+		return true;
 	}
 	public function get_header(){
 		return $this->header;
 	}
 
 	/**
-	 *
+	 * @param $data: must be an array
 	 */
 	public function set_data($data){
+		if( !is_array($data) )
+			return false;
 		$this->data = $data;
+		return true;
 	}
 	public function get_data(){
 		return $this->data;
@@ -103,19 +105,41 @@ class yang_HTTP_request{
 		if( !is_array($this->header) )
 			return false;
 		$header=[]; $i=0;
-		while( list($key,$value) = each($this->header) ){
+		while( list($key,$value) = each($this->header) ){ // remember each()
 			if( is_string($value) ){
 				$header[$i]="$key:$value";
 				$i++;
 			}
 		}
+		reset($this->header); // reset the array~
 		curl_setopt($this->chandle, CURLOPT_HTTPHEADER, $header);
 		// curl_setopt($this->chandle, CURLOPT_HEADER, true);
 		// curl_setopt($this->chandle, CURLINFO_HEADER_OUT, true);
 		return $header;
 	}
-	public function request(){
-		$this->apply_header();
+
+	/**
+	 * send a request
+	 * @param $method: request method, GET or POST
+	 * @param $data: post data
+	 */
+	public function request($method){
+		if( !is_string($method) )
+			return false;
+
+		$this->apply_header(); // apply the header~
+		switch ($method) {
+			case 'GET':
+				curl_setopt($this->chandle, CURLOPT_POST, false);
+				break;
+			case 'POST':
+				curl_setopt($this->chandle, CURLOPT_POST, true);
+				curl_setopt($this->chandle, CURLOPT_POSTFIELDS, $this->data);
+				break;
+			default:
+				# code...
+				break;
+		}
 		$this->response = curl_exec($this->chandle);
 		return $this->response;
 	}
