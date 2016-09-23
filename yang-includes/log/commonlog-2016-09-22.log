@@ -1,0 +1,55 @@
+2016-09-22 10:49:49 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-22 10:49:49 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-22 10:49:49 
+	##errno 8
+	##error Undefined index: HTTP_HOST
+	##errfile C:\xampp\htdocs\yangphp\yang-includes\functions.php
+	##in line 29
+2016-09-22 21:06:29 
+	##errno 2
+	##error preg_replace(): Compilation failed: reference to non-existent subpattern at offset 26
+	##errfile C:\xampp\htdocs\yangphp\yang-test.php
+	##in line 36
+2016-09-22 21:07:27 
+	##errno 2
+	##error preg_replace(): No ending delimiter '/' found
+	##errfile C:\xampp\htdocs\yangphp\yang-test.php
+	##in line 36
+2016-09-22 21:08:03 
+	##errno 2
+	##error preg_replace(): Unknown modifier '\'
+	##errfile C:\xampp\htdocs\yangphp\yang-test.php
+	##in line 36
+2016-09-22 21:08:30 
+	##errno 2
+	##error preg_replace(): No ending delimiter '/' found
+	##errfile C:\xampp\htdocs\yangphp\yang-test.php
+	##in line 36
+2016-09-22 21:08:34 
+	##errno 2
+	##error preg_replace(): No ending delimiter '/' found
+	##errfile C:\xampp\htdocs\yangphp\yang-test.php
+	##in line 36
+2016-09-22 21:08:41 
+	##errno 2
+	##error preg_replace(): No ending delimiter '/' found
+	##errfile C:\xampp\htdocs\yangphp\yang-test.php
+	##in line 36
+2016-09-22 21:08:51 
+	##errno 2
+	##error preg_replace(): No ending delimiter '/' found
+	##errfile C:\xampp\htdocs\yangphp\yang-test.php
+	##in line 36
+2016-09-22 21:09:43 
+	##errno 2
+	##error preg_replace(): No ending delimiter '/' found
+	##errfile C:\xampp\htdocs\yangphp\yang-test.php
+	##in line 36

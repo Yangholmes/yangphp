@@ -21,6 +21,14 @@ error_reporting(E_ALL);
 /**
  * test exec(), execute Windows cmd
  */
-echo passthru('cd C:\xampp\htdocs\wordpress');
-passthru('php index.php', $return);
-echo $return;
+// echo passthru('cd C:\xampp\htdocs\wordpress');
+// passthru('php index.php', $return);
+// echo $return;
+
+/**
+ * Apache Solr HTTP Interface test
+ */
+// $request = new yang_HTTP_request("http://192.168.3.116:8983/solr/gettingstarted/select?indent=on&q=*:*&wt=json");
+// $request->set_header([]);
+// $response = $request->request('GET');
+// echo $response;
