@@ -1,0 +1,10 @@
+2016-10-08 19:35:14 
+	##errno 8
+	##error Undefined index: user
+	##errfile C:\xampp\htdocs\yangphp\yang-login.php
+	##in line 10
+2016-10-08 19:35:14 
+	##errno 8
+	##error Undefined index: password
+	##errfile C:\xampp\htdocs\yangphp\yang-login.php
+	##in line 11

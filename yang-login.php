@@ -16,7 +16,6 @@ if(!isset($yang_config)){ //if yang-config.php didn't require
 
 	if($login->row==1){
 		set_session('valid_user', $user);
-		echo "you log in!";
 		require_once(ROOTPATH.CONTENT.'/home.php');
 	}
 	else
@@ -26,7 +25,7 @@ else{ //if yang-config.php has required than do html
 ?>
 <!DOCTYPE html>
 	<html>
-		<?php do_html_head("登陆", null, "login.css", "jquery-2.1.1.js", ['yangphp', 'login']); ?>
+		<?php do_html_head("登陆", 'home.ico', "login.css", "jquery-2.1.1.js", ['yangphp', 'login']); ?>
 		<body>
 			<form id="login" action="yang-login.php" method="post">
 			账户: <input type="text" name="user" >

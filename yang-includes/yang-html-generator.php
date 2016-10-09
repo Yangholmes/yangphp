@@ -4,6 +4,14 @@
  * 
  */
 
+/**
+ * generate <head> tag for the document
+ * @param $title: title for the page
+ * @param $icon: icon for the page
+ * @param $style: stylesheet for the page
+ * @param $script: JavaScript for the page
+ * @param $keywords: keywords for helping SEO~
+ */
 function do_html_head($title=PROJECT_NAME, $icon="icon.ico", $style, $script, $keywords=["YangPHP"]){
 	$title = is_string($title) ? $title : PROJECT_NAME;
 	if($icon == "")
